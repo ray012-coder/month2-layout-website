@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ray's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ray's Responsive Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Ray's Portfolio</h1>
+    <div class="logo">
+      <h1>Ray's Portfolio</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
@@ -20,17 +23,18 @@
   </header>
 
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hi, I'm Ray — a future software engineer. Passionate about building beautiful and functional websites.</p>
+    <section class="intro">
+      <h2>Welcome to my portfolio!</h2>
+      <p>Explore my projects and learn more about me.</p>
     </section>
 
-    <section>
+    <section class="projects">
       <h2>Projects</h2>
-      <ul>
-        <li>Month 1 Website</li>
-        <li>Coming soon...</li>
-      </ul>
+      <div class="project-cards">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+      </div>
     </section>
   </main>
 

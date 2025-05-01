@@ -1,27 +1,25 @@
-/* 全局基础样式 */
+/* 基本样式 */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f2f5;
+    background-color: #f4f4f4;
     color: #333;
   }
   
-  /* 页眉 */
   header {
     background-color: #1e90ff;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
   }
   
   nav ul {
-    list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
     gap: 20px;
-    margin-top: 10px;
+    list-style: none;
   }
   
   nav ul li a {
@@ -34,23 +32,56 @@ body {
     text-decoration: underline;
   }
   
-  /* 主体区域 */
+  /* 主体 */
   main {
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  section {
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .projects {
+    text-align: center;
+  }
+  
+  .project-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
   }
   
   /* 页脚 */
   footer {
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
     background-color: #222;
     color: white;
+  }
+  
+  /* 响应式布局（使用 media query） */
+  @media (max-width: 768px) {
+    .project-cards {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   
